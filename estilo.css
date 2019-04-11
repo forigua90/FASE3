@@ -1,0 +1,260 @@
+﻿*{
+	margin: 0;
+	padding: 0;  /* Borra todas las mergenes por defecto del navegador y deja el diseño desde 0*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    color: #f47920;
+}
+
+h3, h4 {
+    text-align: center;
+}
+
+.head {
+    display: flex;
+    margin-bottom: 5px;
+    flex-wrap: wrap; /*para que los elementos que no entren se vayan hacia abajo*/
+    justify-content: space-between; /*alinear en el eje horizontal*/
+    align-items: center;
+}
+
+.nombre {
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.imglogo {
+    width: 10em;
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+/*MENU: ;*/
+
+header, .main, footer{ /* centro un poco el contenido de la pagina de acuerdo al % que quiero que ocupe la pagina*/
+	width: 100%;
+	max-width: 1300px;
+	margin: 20px  auto;
+}
+
+header nav{
+	background: #005883;
+    overflow: hidden; 
+}
+
+header nav ul li{
+	float: left; 
+}
+
+header nav ul{
+	list-style: none; 
+}
+
+header nav ul a{
+	padding: 10px 20px;
+	display: block; 
+	color: #fff;
+	text-decoration: none; 
+}
+
+header nav ul a:hover{
+	background:#75acec;
+}
+
+article, aside {
+    box-sizing: border-box;
+}
+
+.menu__link--select {
+    background: #f0b429;
+}
+
+
+/*ARTICULOS*/
+
+.titulo {
+    padding: 10px;
+}
+
+.main {
+	width: 100%;
+    text-align: justify;
+}
+
+.articles, article{
+	margin-right: 1%;/*creo una margen entre el sidebar y los articulos*/
+	float: left; /*alineo los articulos a la izquierda*/
+}
+
+.lectura {
+    width: 100%;
+    text-align: justify;
+}
+
+.texto {
+    margin: 10px;
+    padding: 10px;
+}
+
+.imgtxt {
+    float: right;
+    width: 40%;
+    padding-left: 10px;
+}
+
+
+
+/*SIDEBAR (COLUMNA PARALELA A LOS ARTICLOS)*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /*para que los elementos que no entren se vayan hacia abajo*/
+    justify-content: space-between; /*alinear en el eje horizontal*/
+    align-items: center;
+}
+
+.conside {
+    width: 100%;
+    float: right;
+    
+}
+
+.asid {
+    display:inline-block;
+}
+
+.asid, .side, .tw {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;	 /*le cuadro el espacio que se sale del contenedor*/
+}
+
+.side {
+    /*background: #333333;*/
+background: WHITE;
+}
+
+.asid {
+	background: #333333;
+	/*float: left; /*Para que el sidebar se ubique en paralelo con los articulos*/
+}
+
+.list {
+    margin: 10px 0;
+    text-align: center;   
+}
+
+.item {
+    text-align: left;
+    display: inline-block;
+}
+
+.tw {
+	background: #808080;
+    border-style: double;
+    margin-bottom: 10px;
+}
+
+.imgsid {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+/*PIE DE PAGINA*/
+
+footer{
+	background: #000;
+	color:#fff;
+	clear: both; /*limpia los float y genera como un salto de linea dejandolo en la parte inferior de la pagina*/
+	padding: 10px 0px;
+	text-align: center;
+}
+
+@media screen and (min-width:480px){
+
+    header, footer{ 
+	    width: 90%;
+    }
+    
+    .imglogo {
+        width: 13em;
+    }
+    
+    .n_l {
+        width: 40%;
+    }
+    
+    .n_t{
+        width: 60%;
+    }
+    
+    .asid {
+        width: 33%;
+    }
+    
+    .conside {
+        width: 30.5%;
+    }
+    
+   /**.tw, .side {
+        width: 30.5%;
+    }*/
+    
+	.main{
+		width: 90%;
+	}
+
+    .imgsid {
+        width: 80%;
+        height: auto;
+        padding: 0 auto;
+    }
+    
+	.articles{
+		width: 67.5%;
+	}
+
+}
+
+
+@media screen and (min-width:775px) {
+    
+    .n_l {
+        width: 30%;
+    }
+    
+    .n_t{
+        width: 70%;
+    }
+}
+
+.fondo {        /*fondo toma toda la pantalla*/
+	background-image: url(IMG/fondo.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	opacity: 0.9;
+
+}
+
+
+
+
+
